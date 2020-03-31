@@ -2,9 +2,9 @@
 	"id": "com.demo.gauge",
 	"version": "1.0.0",
 	"name": "LV Demo Gauge",
-	"description": "LV gauge demo",
+	"description": "A gauge demo",
 	"newInstancePrefix": "Gauge",
-	"icon": "https://app.box.com/s/06ueuf17x6jvtw34ka4q0fch4yz681g6",
+	"icon": "https://github.com/LucaVarriale/SACCustomWidget/blob/master/box/icon.png",
 	"vendor": "Demo",
 	"eula": "EULA",
 	"license": "1.0",
@@ -12,21 +12,21 @@
 		{
 			"kind": "main",
 			"tag": "com-demo-gauge",
-			"url": "https://app.box.com/s/9139c44wq8m1dq043kviwd4fcir6yj4a",
+			"url": "https://github.com/LucaVarriale/SACCustomWidget/blob/master/box/box.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "styling",
 			"tag": "com-demo-gauge-sps",
-			"url": "https://app.box.com/s/0ak6rseaa4uwfo9dxzq54hbt40bt2gug",
+			"url": "https://github.com/LucaVarriale/SACCustomWidget/blob/master/box/box_sps.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		},
 		{
 			"kind": "builder",
 			"tag": "com-demo-box-bps",
-			"url": "https://app.box.com/s/cvann5h97y4cyer19cvlh21qijs7y60s",
+			"url": "https://github.com/LucaVarriale/SACCustomWidget/blob/master/box/box_bps.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
@@ -34,12 +34,12 @@
 	"properties": {
 		"value": {
 			"type": "number",
-			"description": "LV Gauge value",
+			"description": "Gauge value",
 			"default": 0
 		},
 		"info": {
 			"type": "string",
-			"description": "LV Gauge info",
+			"description": "Gauge info",
 			"default": ""
 		},
 		"color": {
@@ -90,5 +90,3 @@
 		}
 	}
 }
-
- 
