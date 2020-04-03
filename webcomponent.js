@@ -1,7 +1,7 @@
 (function()  {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
-        <h1>Custom Widget Stock demo 2</h1>
+        <h1>Custom Widget Stock demo 2a</h1>
     `;
 
     customElements.define('com-sap-sample-stockdemo1', class StockDemo1 extends HTMLElement {
