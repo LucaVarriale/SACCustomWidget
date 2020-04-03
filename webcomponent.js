@@ -1,10 +1,39 @@
 (function()  {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = `
-        <h1>Custom Widget Stock demo 3</h1>
+        <h1>TEST</h1>
+var request = new XMLHttpRequest();
+request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
+request.onload = function () {
+
+  // Begin accessing JSON data here
+  var data = JSON.parse(this.response);
+  if (request.status >= 200 && request.status < 400) {
+    data.forEach(movie => {
+      const card = document.createElement('div');
+      card.setAttribute('class', 'card');
+
+      const h1 = document.createElement('h1');
+      h1.textContent = movie.title;
+
+      const p = document.createElement('p');
+      movie.description = movie.description.substring(0, 300);
+      p.textContent = `${movie.description}...`;
+
+      container.appendChild(card);
+      card.appendChild(h1);
+      card.appendChild(p);
+    });
+  }
+}
+
+request.send();
+
+
+
     `;
 
-    customElements.define('com-sap-sample-stockdemo1', class StockDemo1 extends HTMLElement {
+    customElements.define('com-sap-sample-demo1', class Demo1 extends HTMLElement {
 
 
 		constructor() {
